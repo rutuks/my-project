@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography Website</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        /* styles.css */
+
+        /* Hero Section */
+        .hero-section {
+            background-image: url('hero.jpg');
+            color: black;
+            text-align: center;
+            padding: 100px 0;
+            height: 700px;
+            width: 100%;
+        }
+
+        .hero-content h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .hero-content p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+
+        /* Photo Gallery */
+        .photo-gallery h2 {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .photo-gallery .card {
+            border: none;
+        }
+
+        /* Testimonial Slider */
+        .testimonial-slider {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .testimonial-slider .carousel-inner {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .testimonial-slider .carousel-item {
+            text-align: center;
+        }
+
+        .testimonial-slider .testimonial {
+            padding: 20px;
+        }
+
+        .testimonial-slider .author {
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- Hero Section -->
+<header class="hero-section">
+    <!-- Navigation Menu -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Photography</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#hero">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#photo-gallery">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navigation Menu -->
+    
+    <!-- Hero Content -->
+    <div class="hero-content text-center">
+        <h1>Welcome to Our Photography World</h1>
+        <p class="lead">Explore stunning photographs captured by our talented photographers.</p>
+    </div>
+    <!-- End Hero Content -->
+</header>
+<!-- End Hero Section -->
+
+<!-- Photo Gallery Section -->
+<section id="photo-gallery" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Photo Gallery</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- Gallery Items -->
+            <div class="col">
+                <div class="card">
+                    <img src="download.jpg" class="card-img-top" alt="...">
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="download (2).jpg" class="card-img-top" alt="...">
+                </div>
+            </div> 
+            
+            <div class="col">
+                <div class="card">
+                    <img src="download (4).jpg" class="card-img-top" alt="...">
+                </div>
+            </div> <div class="col">
+                <div class="card">
+                    <img src="download (6).jpg" class="card-img-top" alt="...">
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="download (3).jpg" class="card-img-top" alt="...">
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="download (8).jpg" class="card-img-top" alt="...">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Photo Gallery Section -->
+
+<!-- Testimonial Slider -->
+<section id="testimonials" class="testimonial-slider py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Testimonials</h2>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                
+                <div class="carousel-item active">
+                    <div class="testimonial">
+                        <p class="lead">“A thing that you see in my pictures is that I was not afraid to fall in love with these people.</p>
+                        <span class="author">- John Down</span>
+                    </div>
+                </div>
+                <div class="carousel-item active">
+                    <div class="testimonial">
+                        <p class="lead">"“You don’t make a photograph just with a camera. You bring to the act of photography all the pictures you have seen, the books you have read, the music you have heard, the people you have loved."</p>
+                        <span class="author">- Johnny DD</span>
+                    </div>
+                </div>
+                <div class="carousel-item active">
+                    <div class="testimonial">
+                        <p class="lead">"Landscape photography is the supreme test of the photographer – and often the supreme disappointment."</p>
+                        <span class="author">- John Doey</span>
+                    </div>
+                </div>
+               
+            </div>
+            <!-- Navigation Buttons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+</section>
+<!-- End Testimonial Slider -->
+
+
+<!-- About Section -->
+<section id="about" class="about-section py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h2 class="mb-4">About Our Vision</h2>
+                <p class="lead">Embracing the beauty of every moment, we strive to create timeless memories through our lens.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="download (9).jpg" class="img-fluid rounded-circle" alt="About Image">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End About Section -->
+
+<!-- Contact Section -->
+<section id="contact" class="contact-section py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5">Get in Touch</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Send Us a Message</h3>
+                <!-- Contact Form -->
+                <form action="/contact.php" method="POST">
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Your Name" required name="name">
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" placeholder="Your Email" required name="email">
+                    </div>
+                    <div class="mb-3">
+                        <textarea class="form-control" placeholder="Your Message" required name="message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <h3>Contact Information</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Chicago, US</p>
+                <p><i class="fas fa-phone-alt"></i> Phone: +00 151515</p>
+                <p><i class="fas fa-envelope"></i> Email: mail@mail.com</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Contact Section -->
+
+<!-- Footer -->
+<footer class="footer-section py-4 text-center">
+    <div class="container">
+        <p class="mb-0">Follow us on social media: <i class="fab fa-facebook-f"></i> <i class="fab fa-instagram"></i> <i class="fab fa-twitter"></i></p>
+    </div>
+    <div class="social-links">
+        <a href="#"><i class="fa fa-facebook-official"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+    </div>
+   
+</footer>
+<!-- End Footer -->
+
+<!-- Bootstrap Bundle with Popper -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0/js/bootstrap.bundle.min.js">
+   
+    document.addEventListener('DOMContentLoaded', function () {
+        // Smooth scrolling for navigation links
+        const smoothScroll = function (target) {
+            const targetPosition = target.getBoundingClientRect().top + window.scrollY;
+            const startPosition = window.pageYOffset;
+            const distance = targetPosition - startPosition;
+            const duration = 1000; // Duration of the scroll animation in milliseconds
+            let startTime = null;
+
+            const animation = function (currentTime) {
+                if (startTime === null) {
+                    startTime = currentTime;
+                }
+                const timeElapsed = currentTime - startTime;
+                const ease = function (t) {
+                    return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
+                };
+                window.scrollTo(0, ease(timeElapsed / duration) * distance + startPosition);
+                if (timeElapsed < duration) {
+                    requestAnimationFrame(animation);
+                }
+            };
+
+            requestAnimationFrame(animation);
+        };
+
+        // Smooth scroll to target section when a navigation link is clicked
+        const navLinks = document.querySelectorAll('.nav-link');
+        navLinks.forEach(function (navLink) {
+            navLink.addEventListener('click', function (event) {
+                event.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetSection = document.getElementById(targetId);
+                smoothScroll(targetSection);
+            });
+        });
+    });
+</script>
+
+</script>
+
+
+</body>
+</html>
