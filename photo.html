@@ -251,11 +251,11 @@
 </footer>
 <!-- End Footer -->
 
-<!-- Bootstrap Bundle with Popper -->
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0/js/bootstrap.bundle.min.js">
    
     document.addEventListener('DOMContentLoaded', function () {
-        // Smooth scrolling for navigation links
+    
         const smoothScroll = function (target) {
             const targetPosition = target.getBoundingClientRect().top + window.scrollY;
             const startPosition = window.pageYOffset;
@@ -280,7 +280,7 @@
             requestAnimationFrame(animation);
         };
 
-        // Smooth scroll to target section when a navigation link is clicked
+        
         const navLinks = document.querySelectorAll('.nav-link');
         navLinks.forEach(function (navLink) {
             navLink.addEventListener('click', function (event) {
