@@ -8,7 +8,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
     <style>
-        /* styles.css */
+       
 
         /* Hero Section */
         .hero-section {
@@ -243,24 +243,24 @@
         <p class="mb-0">Follow us on social media: <i class="fab fa-facebook-f"></i> <i class="fab fa-instagram"></i> <i class="fab fa-twitter"></i></p>
     </div>
     <div class="social-links">
-        <a href="#"><i class="fa fa-facebook-official"></i></a>
-        <a href="#"><i class="fa fa-instagram"></i></a>
-        <a href="#"><i class="fa fa-twitter"></i></a>
-    </div>
-   
+            <a href="#"><i class="fa fa-facebook-official"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+        </div>
+       
 </footer>
 <!-- End Footer -->
 
-
+<!-- Bootstrap Bundle with Popper -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0/js/bootstrap.bundle.min.js">
    
     document.addEventListener('DOMContentLoaded', function () {
-    
+        
         const smoothScroll = function (target) {
             const targetPosition = target.getBoundingClientRect().top + window.scrollY;
             const startPosition = window.pageYOffset;
             const distance = targetPosition - startPosition;
-            const duration = 1000; // Duration of the scroll animation in milliseconds
+            const duration = 1000; 
             let startTime = null;
 
             const animation = function (currentTime) {
