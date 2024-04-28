@@ -1,0 +1,53 @@
+
+        /* Hero Section */
+        .hero-section {
+            background-image: url('hero.jpg');
+            color: black;
+            text-align: center;
+            padding: 100px 0;
+            height: 700px;
+            width: 100%;
+        }
+
+        .hero-content h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .hero-content p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+
+        /* Photo Gallery */
+        .photo-gallery h2 {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .photo-gallery .card {
+            border: none;
+        }
+
+        /* Testimonial Slider */
+        .testimonial-slider {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .testimonial-slider .carousel-inner {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .testimonial-slider .carousel-item {
+            text-align: center;
+        }
+
+        .testimonial-slider .testimonial {
+            padding: 20px;
+        }
+
+        .testimonial-slider .author {
+            font-style: italic;
+        }
